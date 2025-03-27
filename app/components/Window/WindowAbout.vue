@@ -3,7 +3,7 @@ const runtimeConfig = useRuntimeConfig()
 </script>
 
 <template>
-  <Window centered>
+  <Window :content="{centered: true}">
     <div class="container">
       <h2>
         Open Web Desktop
