@@ -2,6 +2,7 @@ export default defineDesktopApp({
     id: "org.owdproject.about",
     name: "About",
     singleton: true,
+    icon: "mdi:hexagon-multiple-outline",
     windows: {
         main: {
             component: () => import('./app/components/Window/WindowAbout.vue'),
