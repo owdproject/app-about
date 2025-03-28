@@ -5,16 +5,16 @@ const runtimeConfig = useRuntimeConfig()
 <template>
   <Window :content="{centered: true}">
     <div class="container">
-      <h2>
+      <h2 class="mb-1">
         Open Web Desktop
       </h2>
       <a href="https://github.com/owdproject/owd-client" target="_blank">
         github.com/owdproject/owd-client
       </a>
 
-      <div class="version" v-text="runtimeConfig.public.coreVersion"/>
+      <div class="version my-4 opacity-30" v-text="runtimeConfig.public.coreVersion"/>
 
-      <div class="powered-by">
+      <div class="powered-by opacity-50">
         <ul>
           <li>
             <Icon name="simple-icons:nuxt" :size="25" style="margin-top: -1px"/>
@@ -33,11 +33,6 @@ const runtimeConfig = useRuntimeConfig()
   margin: 0 auto;
   text-align: center;
 
-  h2 {
-    margin-top: 0;
-    margin-bottom: 8px;
-  }
-
   a {
     color: var(--v-primary);
     font-size: 14px;
@@ -45,9 +40,7 @@ const runtimeConfig = useRuntimeConfig()
   }
 
   .version {
-    margin: 20px 0;
     font-size: 18px;
-    opacity: 0.25;
   }
 
   .powered-by {
@@ -60,7 +53,6 @@ const runtimeConfig = useRuntimeConfig()
       padding: 0 0 0 3px;
       max-width: 64px;
       line-height: 23px;
-      opacity: 0.4;
       text-align: right;
       text-transform: uppercase;
       list-style-type: none;
