@@ -35,7 +35,7 @@ const runtimeConfig = useRuntimeConfig()
 
   h2 {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 8px;
   }
 
   a {
@@ -45,6 +45,7 @@ const runtimeConfig = useRuntimeConfig()
   }
 
   .version {
+    margin: 20px 0;
     font-size: 18px;
     opacity: 0.25;
   }
