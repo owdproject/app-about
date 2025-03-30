@@ -5,7 +5,7 @@ const runtimeConfig = useRuntimeConfig()
 <template>
   <Window :content="{centered: true}">
     <div class="container">
-      <h2 class="mb-1">
+      <h2 class="text-2xl font-semibold mb-1">
         Open Web Desktop
       </h2>
       <a href="https://github.com/owdproject/owd-client" target="_blank">
