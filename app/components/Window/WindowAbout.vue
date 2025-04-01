@@ -8,8 +8,8 @@ const runtimeConfig = useRuntimeConfig()
       <h2 class="text-2xl font-semibold mb-1">
         Open Web Desktop
       </h2>
-      <a href="https://github.com/owdproject/owd-client" target="_blank">
-        github.com/owdproject/owd-client
+      <a href="https://github.com/owdproject/client" target="_blank">
+        github.com/owdproject/client
       </a>
 
       <div class="version my-4 opacity-30" v-text="runtimeConfig.public.coreVersion"/>
