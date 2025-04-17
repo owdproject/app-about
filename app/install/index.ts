@@ -1,1 +1,3 @@
-export const AppAbout = import('../../owd.config')
+import AppAboutConfig from '../../owd.config'
+
+export const AppAbout = AppAboutConfig
