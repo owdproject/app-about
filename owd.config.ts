@@ -1,16 +1,12 @@
 export default defineDesktopApp({
     id: "org.owdproject.about",
-    name: "About",
+    title: "About",
+    category: "system-tools",
     singleton: true,
     icon: "mdi:hexagon-multiple-outline",
     windows: {
         main: {
             component: () => import('./app/components/Window/WindowAbout.vue'),
-            name: "WindowAbout",
-            category: "system-tools",
-            title: "About",
-            icon: "mdi:hexagon-multiple-outline",
-            pinned: true,
             resizable: false,
             size: {
                 width: 448,
@@ -23,12 +19,14 @@ export default defineDesktopApp({
             },
         }
     },
+    entries: {
+        about: {
+            command: 'about'
+        }
+    },
     commands: {
         about: (app: IApplicationController) => {
             app.openWindow("main")
         }
     },
-    onLaunch: (app: IApplicationController) => {
-        app.openWindow('main')
-    }
 })
