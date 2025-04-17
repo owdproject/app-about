@@ -1,4 +1,4 @@
-export default {
+export default defineDesktopApp({
     id: "org.owdproject.about",
     title: "About",
     category: "system-tools",
