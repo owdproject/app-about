@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/screenshot.png" alt="OWD About App" width="400" />
+  <img src="assets/screenshot.png" alt="OWD About App" />
 </p>
 
 # About App
