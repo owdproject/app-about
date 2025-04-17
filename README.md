@@ -18,7 +18,7 @@ The OWD About App is a simple application for Open Web Desktop that displays som
     ```
 2.  Install the module using npm or yarn:
     ```bash
-    npm install https://github.com/owdproject/app-about.git
+    npm install github:owdproject/app-about
     ```
 3.  Register the application in your OWD configuration file (`owd.config.ts`):
     ```typescript
@@ -27,6 +27,10 @@ The OWD About App is a simple application for Open Web Desktop that displays som
     
     export const owdConfig = {
         theme: ['github:owdproject/theme-win95', { install: true }],
+    
+        apps: [
+           './node_modules/owd-app-about',
+        ],
     
         loader: async () => {
             await defineDesktopApp(AppAbout)
