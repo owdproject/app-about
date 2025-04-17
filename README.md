@@ -8,7 +8,7 @@
 
 ## Overview
 
-The OWD About App is a simple application for Open Web Desktop that displays basic information about your OWD instance.
+The OWD About App is a simple application for Open Web Desktop that displays some basic info.
 
 ## Quick Installation
 
@@ -18,17 +18,19 @@ The OWD About App is a simple application for Open Web Desktop that displays bas
     ```
 2.  Install the module using npm or yarn:
     ```bash
-    npm install https://github.com/owdproject/owd-app-about.git
+    npm install https://github.com/owdproject/app-about.git
     ```
 3.  Register the application in your OWD configuration file (`owd.config.ts`):
     ```typescript
     // owd.config.ts
-    export const owdConfig = {
-        theme: 'github:owdproject/owd-theme-gnome',
+    import AppAbout from 'owd-app-about/owd.config'
     
-        apps: [
-            'owd-app-about'
-        ]
+    export const owdConfig = {
+        theme: ['github:owdproject/theme-win95', { install: true }],
+    
+        loader: async () => {
+            await defineDesktopApp(AppAbout)
+        }
     }
     ```
 

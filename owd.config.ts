@@ -1,4 +1,4 @@
-export default defineDesktopApp({
+export default {
     id: "org.owdproject.about",
     title: "About",
     category: "system-tools",
@@ -29,4 +29,4 @@ export default defineDesktopApp({
             app.openWindow("main")
         }
     },
-})
+}
