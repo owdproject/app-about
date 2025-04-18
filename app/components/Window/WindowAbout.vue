@@ -17,10 +17,19 @@ const runtimeConfig = useRuntimeConfig()
       <div class="powered-by opacity-50">
         <ul>
           <li>
-            <Icon name="simple-icons:nuxt" :size="25" style="margin-top: -1px"/>
+            <Icon title="Vue.js" name="simple-icons:vuedotjs" :size="18" style="margin: 3px -5px 0 0;"/>
           </li>
           <li>
-            <Icon name="simple-icons:typescript" :size="18" style="margin-top: 3px"/>
+            <Icon title="Nuxt.js" name="simple-icons:nuxt" :size="25" style="margin-top: -1px"/>
+          </li>
+          <li>
+            <Icon title="TypeScript" name="simple-icons:typescript" :size="18" style="margin-top: 3px"/>
+          </li>
+          <li>
+            <Icon title="PrimeVue" name="simple-icons:primevue" :size="18" style="margin-top: 3px"/>
+          </li>
+          <li>
+            <Icon title="Tailwind CSS" name="simple-icons:tailwindcss" :size="18" style="margin-top: 3px"/>
           </li>
         </ul>
       </div>
@@ -47,18 +56,16 @@ const runtimeConfig = useRuntimeConfig()
     margin-top: 12px;
 
     ul {
-      display: grid;
-      grid-template-columns: 64% 18% 18%;
+      display: flex;
       margin: 0 auto;
-      padding: 0 0 0 3px;
-      max-width: 64px;
+      max-width: min-content;
       line-height: 23px;
       text-align: right;
       text-transform: uppercase;
       list-style-type: none;
 
-      li:first-child {
-        text-align: left;
+      li {
+        margin: 0 8px;
       }
     }
   }
