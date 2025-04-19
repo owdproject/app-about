@@ -10,7 +10,7 @@
 
 This app for Open Web Desktop displays the core version and other basic information.
 
-## Quick Installation
+## Installation
 
 1.  Navigate to your client folder in your terminal:
 
