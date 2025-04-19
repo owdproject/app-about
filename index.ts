@@ -30,8 +30,8 @@ export default defineNuxtModule({
             // configure tailwind
 
             await installModule('@nuxtjs/tailwindcss', {
+                viewer: false,
                 config: {
-                    viewer: false,
                     content: {
                         files: [
                             resolve('./runtime/components/**/*.{vue,mjs,ts}'),
