@@ -1,9 +1,9 @@
 <p align="center">
   <img width="160" height="160" src="https://avatars.githubusercontent.com/u/65117737?s=160&v=4" />
 </p>
-<h1 align="center">About App</h1>
+<h1 align="center">About</h1>
 <h3 align="center">
-  About app for your Open Web Desktop client
+  About App for your Open Web Desktop client
 </h3>
 
 ## Overview
@@ -12,19 +12,19 @@ This app for Open Web Desktop displays the core version and other basic informat
 
 ## Quick Installation
 
-1.  Navigate to your OWD client folder in your terminal:
+1.  Navigate to your client folder in your terminal:
 
     ```bash
     cd owd-client
     ```
 
-2.  Install the module using npm or yarn:
+2.  Install the desktop module using npm or yarn:
 
     ```bash
     npm install @owdproject/app-about
     ```
 
-3.  Register the application in your OWD configuration file:
+3.  Register the application in your desktop configuration file:
 
     ```typescript
     // owd.config.ts
