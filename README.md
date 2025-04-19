@@ -28,7 +28,7 @@ This app for Open Web Desktop displays the core version and other basic informat
 
     ```typescript
     // owd.config.ts
-    defineDesktopConfig({
+    export default defineDesktopConfig({
         apps: [
             '@owdproject/app-about',
         ]
