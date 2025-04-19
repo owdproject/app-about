@@ -1,14 +1,14 @@
 <p align="center">
-  <img src="assets/screenshot.png" alt="OWD About App" />
+  <img width="160" height="160" src="https://avatars.githubusercontent.com/u/65117737?s=160&v=4" />
 </p>
-
-# About App
-
-> About app for your Open Web Desktop client
+<h1 align="center">About App</h1>
+<h3 align="center">
+  About app for your Open Web Desktop client
+</h3>
 
 ## Overview
 
-The OWD About App is a simple app for Open Web Desktop that displays the version and other information.
+This app for Open Web Desktop displays the core version and other basic information.
 
 ## Quick Installation
 
@@ -21,32 +21,24 @@ The OWD About App is a simple app for Open Web Desktop that displays the version
 2.  Install the module using npm or yarn:
 
     ```bash
-    npm install github:owdproject/app-about
+    npm install @owdproject/app-about
     ```
 
 3.  Register the application in your OWD configuration file:
 
     ```typescript
     // owd.config.ts
-    import AppAbout from 'owd-app-about/owd.config'
-    
-    export const owdConfig = {
-        theme: ['github:owdproject/theme-win95', { install: true }],
-    
+    defineDesktopConfig({
         apps: [
-           './node_modules/owd-app-about',
-        ],
-    
-        loader: async () => {
-            await defineDesktopApp(AppAbout)
-        }
-    }
+            '@owdproject/app-about',
+        ]
+    })
     ```
 
 ## Compatibility
 
-This application is compatible with Open Web Desktop client version `3.0.0-alpha.0`.
+This application is compatible with Open Web Desktop client version `3.0.0-alpha.3`.
 
 ## License
 
-This project is released under the [MIT License](LICENSE).
+This application is released under the [GNU General Public License v3](LICENSE).

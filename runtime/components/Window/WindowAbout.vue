@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import {useRuntimeConfig} from "nuxt/app"
+
 const runtimeConfig = useRuntimeConfig()
 </script>
 
@@ -43,7 +45,6 @@ const runtimeConfig = useRuntimeConfig()
   text-align: center;
 
   a {
-    color: var(--v-primary);
     font-size: 14px;
     opacity: 0.75;
   }

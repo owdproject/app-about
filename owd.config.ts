@@ -6,7 +6,7 @@ export default {
     icon: "mdi:hexagon-multiple-outline",
     windows: {
         main: {
-            component: () => import('./app/components/Window/WindowAbout.vue'),
+            component: () => import('./runtime/components/Window/WindowAbout.vue'),
             resizable: false,
             size: {
                 width: 448,
