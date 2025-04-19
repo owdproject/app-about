@@ -37,8 +37,8 @@ This app for Open Web Desktop displays the core version and other basic informat
 
 ## Compatibility
 
-This application is compatible with Open Web Desktop client version `3.0.0-alpha.3`.
+The application is compatible with Open Web Desktop client version `3.0.0-alpha.3`.
 
 ## License
 
-This application is released under the [GNU General Public License v3](LICENSE).
+The application is released under the [GNU General Public License v3](LICENSE).
