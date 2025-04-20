@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">About</h1>
 <h3 align="center">
-  About App for your Open Web Desktop client
+  About App for your Open Web Desktop client.
 </h3>
 
 ## Overview
