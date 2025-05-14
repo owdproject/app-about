@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import {useRuntimeConfig} from "nuxt/app"
+import {useRuntimeConfig,useNuxtApp} from "nuxt/app"
 
 const runtimeConfig = useRuntimeConfig()
+const nuxtApp = useNuxtApp()
+console.log(nuxtApp)
 </script>
 
 <template>
@@ -14,7 +16,9 @@ const runtimeConfig = useRuntimeConfig()
         github.com/owdproject/client
       </a>
 
-      <div class="version my-4 opacity-30" v-text="runtimeConfig.public.coreVersion"/>
+      <div class="version my-4 opacity-30">
+        v{{runtimeConfig.public.coreVersion}} on Nuxt {{nuxtApp.versions.nuxt}}
+      </div>
 
       <div class="powered-by opacity-50">
         <ul>
