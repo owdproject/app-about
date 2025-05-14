@@ -3,7 +3,6 @@ import {useRuntimeConfig,useNuxtApp} from "nuxt/app"
 
 const runtimeConfig = useRuntimeConfig()
 const nuxtApp = useNuxtApp()
-console.log(nuxtApp)
 </script>
 
 <template>
