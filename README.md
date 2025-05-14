@@ -37,4 +37,4 @@ This app for Open Web Desktop displays the core version and other basic informat
 
 ## License
 
-The application is released under the [GNU General Public License v3](LICENSE).
+The application is released under the [MIT License](LICENSE).
