@@ -13,7 +13,7 @@ This app for Open Web Desktop displays the version and other information.
 ## Installation
 
 ```bash
-nx run desktop:install-app --name=@owdproject/app-about
+owd install-app @owdproject/app-about
 ```
 
 ## Usage
