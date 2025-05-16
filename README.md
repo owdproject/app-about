@@ -3,37 +3,26 @@
 </p>
 <h1 align="center">About</h1>
 <h3 align="center">
-  About App for your Open Web Desktop client.
+  About App for Open Web Desktop.
 </h3>
 
 ## Overview
 
-This app for Open Web Desktop displays the core version and other basic information.
+This app for Open Web Desktop displays the version and other information.
 
 ## Installation
 
-1.  Navigate to your client folder in your terminal:
+```bash
+nx run desktop:install-app --name=@owdproject/app-about
+```
 
-    ```bash
-    cd owd-client
-    ```
+## Usage
 
-2.  Install the desktop module using npm or yarn:
+#### Available commands
 
-    ```bash
-    npm install @owdproject/app-about
-    ```
-
-3.  Register the application in your desktop configuration file:
-
-    ```typescript
-    // owd.config.ts
-    export default defineDesktopConfig({
-        apps: [
-            '@owdproject/app-about',
-        ]
-    })
-    ```
+```
+about
+```
 
 ## License
 
