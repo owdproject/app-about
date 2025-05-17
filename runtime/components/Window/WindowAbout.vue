@@ -1,40 +1,64 @@
 <script setup lang="ts">
-import {useRuntimeConfig,useNuxtApp} from "nuxt/app"
+import { useRuntimeConfig, useNuxtApp } from 'nuxt/app'
 
 const runtimeConfig = useRuntimeConfig()
 const nuxtApp = useNuxtApp()
 </script>
 
 <template>
-  <Window :content="{centered: true}">
+  <Window :content="{ centered: true }">
     <div class="container">
-      <h2 class="text-2xl font-semibold mb-1">
-        Open Web Desktop
-      </h2>
+      <h2 class="text-2xl font-semibold mb-1">Open Web Desktop</h2>
       <a href="https://github.com/owdproject/client" target="_blank">
         github.com/owdproject/client
       </a>
 
       <div class="version my-4 opacity-30">
-        v{{runtimeConfig.public.coreVersion}} on Nuxt {{nuxtApp.versions.nuxt}}
+        v{{ runtimeConfig.public.coreVersion }} on Nuxt
+        {{ nuxtApp.versions.nuxt }}
       </div>
 
       <div class="powered-by opacity-50">
         <ul>
           <li>
-            <Icon title="Vue.js" name="simple-icons:vuedotjs" :size="18" style="margin: 3px -5px 0 0;"/>
+            <Icon
+              title="Vue.js"
+              name="simple-icons:vuedotjs"
+              :size="18"
+              style="margin: 3px -5px 0 0"
+            />
           </li>
           <li>
-            <Icon title="Nuxt.js" name="simple-icons:nuxt" :size="25" style="margin-top: -1px"/>
+            <Icon
+              title="Nuxt.js"
+              name="simple-icons:nuxt"
+              :size="25"
+              style="margin-top: -1px"
+            />
           </li>
           <li>
-            <Icon title="TypeScript" name="simple-icons:typescript" :size="18" style="margin-top: 3px"/>
+            <Icon
+              title="TypeScript"
+              name="simple-icons:typescript"
+              :size="18"
+              style="margin-top: 3px"
+            />
           </li>
           <li>
-            <Icon title="PrimeVue" name="simple-icons:primevue" :size="18" style="margin-top: 3px"/>
+            <Icon
+              title="PrimeVue"
+              name="simple-icons:primevue"
+              :size="18"
+              style="margin-top: 3px"
+            />
           </li>
           <li>
-            <Icon title="Tailwind CSS" name="simple-icons:tailwindcss" :size="18" style="margin-top: 3px"/>
+            <Icon
+              title="Tailwind CSS"
+              name="simple-icons:tailwindcss"
+              :size="18"
+              style="margin-top: 3px"
+            />
           </li>
         </ul>
       </div>
