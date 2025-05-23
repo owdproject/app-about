@@ -20,7 +20,30 @@ owd install-app @owdproject/app-about
 
 ## Usage
 
-#### Available commands
+#### Configuration
+
+```ts
+export default defineDesktopConfig({
+  apps: [
+    '@owdproject/app-about'
+  ],
+  about: {
+    title: 'Open Web Desktop',
+    subtitle: 'github.com/owdproject/client',
+    href: 'https://github.com/owdproject/client',
+    versionText: 'v{owdVersion} on Nuxt {nuxtVersion}',
+    icons: [
+      {
+        title: 'Open Web Desktop',
+        name: 'mdi:hexagon-multiple-outline',
+        size: 24,
+      },
+    ]
+  }
+})
+```
+
+#### Commands
 
 ```
 about
