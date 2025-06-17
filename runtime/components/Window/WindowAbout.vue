@@ -27,12 +27,14 @@ const runtimeConfig = useRuntimeConfig()
             v-for="icon of runtimeConfig.public.about.icons"
             :key="icon.name"
           >
-            <Icon
-              :title="icon.title"
-              :name="icon.name"
-              :size="icon.size"
-              :style="icon.style"
-            />
+            <a v-bind="typeof icon.link === 'string' ? { href: icon.link } : icon.link">
+              <Icon
+                :title="icon.title"
+                :name="icon.name"
+                :size="icon.size"
+                :style="icon.style"
+              />
+            </a>
           </li>
         </ul>
       </div>

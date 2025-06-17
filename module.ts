@@ -15,39 +15,8 @@ export default defineNuxtModule({
     title: 'Open Web Desktop',
     subtitle: 'github.com/owdproject/client',
     href: 'https://github.com/owdproject/client',
-    versionText: 'v{owdVersion} on Nuxt {nuxtVersion}',
-    icons: [
-      {
-        title: 'Vue.js',
-        name: 'simple-icons:vuedotjs',
-        size: 18,
-        style: 'margin: 3px -5px 0 0'
-      },
-      {
-        title: 'Nuxt.js',
-        name: 'simple-icons:nuxt',
-        size: 25,
-        style: 'margin-top: -1px'
-      },
-      {
-        title: 'TypeScript',
-        name: 'simple-icons:typescript',
-        size: 18,
-        style: 'margin-top: 3px'
-      },
-      {
-        title: 'PrimeVue',
-        name: 'simple-icons:primevue',
-        size: 18,
-        style: 'margin-top: 3px'
-      },
-      {
-        title: 'Tailwind CSS',
-        name: 'simple-icons:tailwindcss',
-        size: 18,
-        style: 'margin-top: 3px'
-      }
-    ]
+    versionText: 'v{owdVersion} + Nuxt {nuxtVersion}',
+    icons: []
   },
   async setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url)
@@ -57,6 +26,41 @@ export default defineNuxtModule({
     options.versionText = options.versionText
       .replace('{owdVersion}', coreVersion)
       .replace('{nuxtVersion}', nuxt._version || 'unknown')
+
+    if (!options.icons || Array.isArray(options.icons) && options.icons.length === 0) {
+      options.icons = [
+        {
+          title: 'Vue.js',
+          name: 'simple-icons:vuedotjs',
+          size: 18,
+          style: 'margin: 3px -5px 0 0'
+        },
+        {
+          title: 'Nuxt.js',
+          name: 'simple-icons:nuxt',
+          size: 25,
+          style: 'margin-top: -1px'
+        },
+        {
+          title: 'TypeScript',
+          name: 'simple-icons:typescript',
+          size: 18,
+          style: 'margin-top: 3px'
+        },
+        {
+          title: 'PrimeVue',
+          name: 'simple-icons:primevue',
+          size: 18,
+          style: 'margin-top: 3px'
+        },
+        {
+          title: 'Tailwind CSS',
+          name: 'simple-icons:tailwindcss',
+          size: 18,
+          style: 'margin-top: 3px'
+        }
+      ]
+    }
 
     nuxt.options.runtimeConfig.public.about = options
 
