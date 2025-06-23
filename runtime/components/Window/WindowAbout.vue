@@ -9,22 +9,22 @@ const runtimeConfig = useRuntimeConfig()
     <div class="container">
       <h2
         class="text-2xl font-semibold mb-1"
-        v-text="runtimeConfig.public.about.title"
+        v-text="runtimeConfig.public.desktop.about.title"
       />
       <a
-        :href="runtimeConfig.public.about.href" target="_blank"
-        v-text="runtimeConfig.public.about.subtitle"
+        :href="runtimeConfig.public.desktop.about.href" target="_blank"
+        v-text="runtimeConfig.public.desktop.about.subtitle"
       />
 
       <div
         class="version my-4 opacity-30"
-        v-text="runtimeConfig.public.about.versionText"
+        v-text="runtimeConfig.public.desktop.about.versionText"
       />
 
       <div class="powered-by opacity-50">
         <ul>
           <li
-            v-for="icon of runtimeConfig.public.about.icons"
+            v-for="icon of runtimeConfig.public.desktop.about.icons"
             :key="icon.name"
           >
             <a v-bind="typeof icon.link === 'string' ? { href: icon.link } : icon.link">

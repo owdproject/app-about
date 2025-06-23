@@ -21,7 +21,7 @@ export default defineNuxtModule({
   async setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url)
 
-    const coreVersion = nuxt.options.runtimeConfig.public.coreVersion || '?.?'
+    const coreVersion = nuxt.options.runtimeConfig.public.desktop.coreVersion || '?.?'
 
     options.versionText = options.versionText
       .replace('{owdVersion}', coreVersion)
@@ -62,7 +62,7 @@ export default defineNuxtModule({
       ]
     }
 
-    nuxt.options.runtimeConfig.public.about = options
+    nuxt.options.runtimeConfig.public.desktop.about = options
 
     {
       // add components
