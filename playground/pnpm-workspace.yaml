@@ -1,0 +1,9 @@
+packages:
+  - desktop
+  - apps/*
+  - packages/*
+  - themes/*
+
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - esbuild
