@@ -15,7 +15,7 @@ This app for Open Web Desktop displays the version and other information.
 ## Installation
 
 ```bash
-owd install-app @owdproject/app-about
+pnpm desktop add @owdproject/app-about
 ```
 
 ## Usage
