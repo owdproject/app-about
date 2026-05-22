@@ -38,7 +38,7 @@ jobs:
 
       - name: Install monorepo dependencies
         working-directory: client
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: Prepare module and playground
         working-directory: client/apps/app-about

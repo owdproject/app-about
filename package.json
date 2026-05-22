@@ -66,6 +66,6 @@
     "vue-tsc": "^3.2.4"
   },
   "peerDependencies": {
-    "@owdproject/core": "^3.1.5"
+    "@owdproject/core": "^3.2.0"
   }
 }
