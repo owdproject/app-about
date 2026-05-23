@@ -51,8 +51,8 @@
     "@nuxt/kit": "^4.3.0"
   },
   "devDependencies": {
-    "@owdproject/core": "workspace:*",
-    "@owdproject/theme-nova": "workspace:*",
+    "@owdproject/core": "^3.2.0",
+    "@owdproject/theme-nova": "^0.0.1",
     "@nuxt/devtools": "^3.1.1",
     "@nuxt/module-builder": "^1.0.2",
     "@nuxt/schema": "^4.3.0",

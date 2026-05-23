@@ -8,9 +8,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@owdproject/app-about": "workspace:*",
-    "@owdproject/core": "workspace:*",
-    "@owdproject/theme-nova": "workspace:*",
+    "@owdproject/app-about": "^0.1.4",
+    "@owdproject/core": "^3.2.0",
+    "@owdproject/theme-nova": "^0.0.1",
     "nuxt": "^4.4.4"
   }
 }
