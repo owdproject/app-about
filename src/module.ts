@@ -15,7 +15,7 @@ export default defineNuxtModule({
     title: 'Open Web Desktop',
     subtitle: 'github.com/owdproject/client',
     href: 'https://github.com/owdproject/client',
-    versionText: 'v{owdVersion} + Nuxt {nuxtVersion}',
+    versionText: 'Nuxt {nuxtVersion} + Desktop {desktopVersion}',
     icons: []
   },
   async setup(options, nuxt) {
@@ -25,7 +25,7 @@ export default defineNuxtModule({
       nuxt.options.runtimeConfig.public.desktop?.coreVersion ?? '?.?'
 
     options.versionText = options.versionText
-      .replace('{owdVersion}', coreVersion)
+      .replace('{desktopVersion}', coreVersion)
       .replace('{nuxtVersion}', nuxt._version || 'unknown')
 
     if (!options.icons || Array.isArray(options.icons) && options.icons.length === 0) {
