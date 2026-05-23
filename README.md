@@ -53,7 +53,7 @@ export default defineDesktopConfig({
     title: 'Open Web Desktop',
     subtitle: 'github.com/owdproject/client',
     href: 'https://github.com/owdproject/client',
-    versionText: 'v{owdVersion} on Nuxt {nuxtVersion}',
+    versionText: 'v{desktopVersion} on Nuxt {nuxtVersion}',
     icons: [
       {
         title: 'Open Web Desktop',
