@@ -4,11 +4,11 @@ import {
   addComponentsDir,
   addPlugin,
 } from '@nuxt/kit'
-import { registerTailwindPath } from '@owdproject/core'
+import { registerTailwindPath } from '@owdproject/kit-primevue/kit/registerTailwindPath'
 
 export default defineNuxtModule({
   meta: {
-    name: 'owd-app-about',
+    name: 'desktop-app-about',
     configKey: 'about'
   },
   defaults: {

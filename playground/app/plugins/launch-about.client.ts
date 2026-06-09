@@ -8,7 +8,7 @@ const WINDOW_MODEL = 'main'
 /** Dev playground: open About after register + mount (same pattern as app-todo). */
 export default defineNuxtPlugin({
   name: 'app-about-playground-launch',
-  dependsOn: ['owd-app-about-register'],
+  dependsOn: ['desktop-app-about-register'],
   async setup(nuxtApp) {
     if (!import.meta.dev) return
 
