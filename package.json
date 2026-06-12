@@ -17,6 +17,7 @@
   "exports": {
     ".": {
       "types": "./dist/types.d.mts",
+      "development": "./src/module.ts",
       "import": "./dist/module.mjs"
     }
   },
@@ -48,24 +49,20 @@
     "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit"
   },
   "dependencies": {
-    "@nuxt/kit": "^4.3.0"
+    "@nuxt/kit": "^4.4.6"
   },
   "devDependencies": {
-    "@owdproject/core": "workspace:*",
-    "@nuxt/devtools": "^3.1.1",
+    "@nuxt/devtools": "^3.2.4",
+    "@nuxt/eslint-config": "^1.15.2",
     "@nuxt/module-builder": "^1.0.2",
-    "@nuxt/schema": "^4.3.0",
-    "@nuxt/test-utils": "^3.23.0",
+    "@nuxt/schema": "^4.4.6",
+    "@nuxt/test-utils": "^4.0.3",
     "@types/node": "latest",
     "changelogen": "^0.6.2",
-    "eslint": "^9.39.2",
-    "nuxt": "^4.3.0",
-    "typescript": "catalog:",
-    "vitest": "^4.0.18",
-    "vue-tsc": "^3.2.4"
-  },
-  "peerDependencies": {
-    "@owdproject/core": "^3.4.0",
-    "@owdproject/kit-primevue": "^0.0.1"
+    "eslint": "^10.4.0",
+    "nuxt": "^4.4.6",
+    "typescript": "~6.0.3",
+    "vitest": "^4.1.7",
+    "vue-tsc": "^3.3.1"
   }
 }

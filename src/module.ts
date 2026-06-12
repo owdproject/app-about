@@ -5,7 +5,6 @@ import {
   addPlugin,
 } from '@nuxt/kit'
 import { registerTailwindPath } from '@owdproject/kit-primevue/kit/registerTailwindPath'
-
 export default defineNuxtModule({
   meta: {
     name: 'desktop-app-about',
@@ -88,5 +87,6 @@ export default defineNuxtModule({
         resolve('./runtime/components/**/*.{vue,mjs,ts}'),
       )
     }
+
   },
 })

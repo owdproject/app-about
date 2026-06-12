@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useRuntimeConfig } from 'nuxt/app'
+import { useRuntimeConfig } from '#imports'
 
 defineProps<{
   window?: IWindowController
@@ -10,22 +10,24 @@ const runtimeConfig = useRuntimeConfig()
 
 <template>
   <Window :window="window" :content="{ centered: true }">
-    <div class="container">
+    <div class="about">
       <h2
-        class="text-2xl font-semibold mb-1"
+        class="about__title"
         v-text="runtimeConfig.public.desktop.about.title"
       />
       <a
-        :href="runtimeConfig.public.desktop.about.href" target="_blank"
+        class="about__link"
+        :href="runtimeConfig.public.desktop.about.href"
+        target="_blank"
         v-text="runtimeConfig.public.desktop.about.subtitle"
       />
 
       <div
-        class="version my-4 opacity-30"
+        class="about__version"
         v-text="runtimeConfig.public.desktop.about.versionText"
       />
 
-      <div class="powered-by opacity-50">
+      <div class="about__powered-by">
         <ul>
           <li
             v-for="icon of runtimeConfig.public.desktop.about.icons"
@@ -47,21 +49,32 @@ const runtimeConfig = useRuntimeConfig()
 </template>
 
 <style scoped lang="scss">
-.container {
+.about {
   margin: 0 auto;
   text-align: center;
 
-  a {
+  &__title {
+    margin: 0 0 4px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  &__link {
+    display: inline-block;
     font-size: 14px;
     opacity: 0.75;
   }
 
-  .version {
+  &__version {
+    margin: 16px 0;
     font-size: 18px;
+    opacity: 0.3;
   }
 
-  .powered-by {
+  &__powered-by {
     margin-top: 12px;
+    opacity: 0.5;
 
     ul {
       display: flex;

@@ -24,6 +24,11 @@ export default {
       command: 'about',
     },
   },
+  terminal: {
+    about: {
+      description: 'Open the About window',
+    },
+  },
   commands: {
     about: (app: IApplicationController) => {
       const existing = app.getFirstWindowByModel('main')
