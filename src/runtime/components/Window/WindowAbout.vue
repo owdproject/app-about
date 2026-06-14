@@ -9,7 +9,7 @@ const runtimeConfig = useRuntimeConfig()
 </script>
 
 <template>
-  <Window :window="window" :content="{ centered: true }">
+  <DesktopWindow :window="window" :content="{ centered: true }">
     <div class="about">
       <h2
         class="about__title"
@@ -45,7 +45,7 @@ const runtimeConfig = useRuntimeConfig()
         </ul>
       </div>
     </div>
-  </Window>
+  </DesktopWindow>
 </template>
 
 <style scoped lang="scss">
