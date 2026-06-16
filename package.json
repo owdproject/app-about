@@ -48,8 +48,9 @@
     "test:watch": "vitest watch",
     "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit"
   },
-  "dependencies": {
-    "@nuxt/kit": "^4.4.6"
+  "peerDependencies": {
+    "@owdproject/core": "^3.4.1",
+    "@owdproject/kit-tailwind": "^0.1.0"
   },
   "devDependencies": {
     "@nuxt/devtools": "^3.2.4",
