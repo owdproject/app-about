@@ -10,6 +10,7 @@ dist
 playground/.nuxt
 playground/.output
 playground/dist
+playground/.desktop
 
 # Local static preview (copy for serve; CI uses playground/.output/public)
 preview-root/
