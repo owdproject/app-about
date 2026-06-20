@@ -6,17 +6,13 @@
   About App for Open Web Desktop.
 </h3>
 
-<p align="center">
-  <a href="https://owdproject.github.io/app-about/">Demo</a> · 
-  <a href="http://owdproject.github.io/docs/">Documentation</a> · 
-  <a href="https://github.com/sponsors/owdproject">Sponsor</a>
-</p>
-
 <br />
 
 ## Overview
 
 This app for Open Web Desktop displays the version and other system information.
+
+[Demo](https://owdproject.github.io/app-about/) · [Documentation](http://owdproject.github.io/docs/) · [Sponsor](https://github.com/sponsors/owdproject)
 
 ## Installation
 
