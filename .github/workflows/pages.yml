@@ -24,6 +24,7 @@ jobs:
         with:
           repository: owdproject/client
           path: client
+          submodules: recursive
 
       - name: Overlay this app-about repo
         uses: actions/checkout@v4
