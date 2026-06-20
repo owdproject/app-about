@@ -12,7 +12,7 @@
 
 This app for Open Web Desktop displays the version and other system information.
 
-[Demo](https://owdproject.github.io/app-about/) · [Documentation](http://owdproject.github.io/docs/) · [Sponsor](https://github.com/sponsors/owdproject)
+[Demo](https://owdproject.github.io/app-about/) · [Documentation](https://owdproject.github.io/docs/) · [Support](https://github.com/sponsors/owdproject)
 
 ## Installation
 
