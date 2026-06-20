@@ -6,43 +6,27 @@
   About App for Open Web Desktop.
 </h3>
 
+<p align="center">
+  <a href="https://owdproject.github.io/app-about/">Demo</a> · 
+  <a href="http://owdproject.github.io/docs/">Documentation</a> · 
+  <a href="https://github.com/sponsors/owdproject">Sponsor</a>
+</p>
+
 <br />
 
 ## Overview
 
-This app for Open Web Desktop displays the version and other information.
-
-## Playground
-
-```bash
-pnpm install
-pnpm run dev:prepare
-pnpm run dev
-```
-
-In dev, the playground auto-opens the About window via `playground/app/plugins/launch-about.client.ts` (not used for static `dev:generate` / GitHub Pages).
-
-Static preview (GitHub Pages):
-
-```bash
-pnpm run dev:generate
-```
-
-Uses `@owdproject/theme-nova` as the base shell in the monorepo playground.
-
-Live demo: [owdproject.github.io/app-about](https://owdproject.github.io/app-about/)
-
-Contributor/agent playbook (scaffold other apps the same way): [OWD_APP_MODULE_PLAYGROUND.md](../../docs/agents/OWD_APP_MODULE_PLAYGROUND.md) in the client monorepo.
+This app for Open Web Desktop displays the version and other system information.
 
 ## Installation
 
 ```bash
-pnpm desktop add @owdproject/app-about
+pnpm desktop add app-about
 ```
 
-## Usage
+## Configuration
 
-#### Configuration
+Add the app to your `desktop.config.ts`:
 
 ```ts
 export default defineDesktopConfig({
@@ -65,12 +49,6 @@ export default defineDesktopConfig({
 })
 ```
 
-#### Commands
-
-```
-about
-```
-
 ## License
 
-The application is released under the [MIT License](LICENSE).
+This application is released under the [MIT License](LICENSE).
