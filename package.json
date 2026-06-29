@@ -1,6 +1,6 @@
 {
   "name": "@owdproject/app-about",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "About App for your Open Web Desktop client",
   "keywords": [
     "owd-client",
@@ -33,9 +33,6 @@
   "files": [
     "dist"
   ],
-  "nx": {
-    "name": "app-about"
-  },
   "scripts": {
     "prepack": "nuxt-module-build build",
     "dev": "pnpm run dev:prepare && cd playground && pnpm exec nuxt dev",
